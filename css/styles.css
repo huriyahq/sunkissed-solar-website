@@ -1,12 +1,102 @@
 /* -------- STYLES FOR SECTIONS -------- */
 
 /* HEADER HERO STYLES */
+.hero-header {
+    height: 58vh;
+}
+
 .hero-img {
     width: 300px;
 }
 
-/* NAVIGATION BAR STYLES */
 
+/* NAVIGATION BAR STYLES */
+.navbar {
+    background-color: var(--clr-frenchblue);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    padding: 0 24px;
+    font-size: var(--fs-p);
+  }
+
+  .nav-menu {
+    background-color: var(--clr-frenchblue);
+    list-style: none;
+    gap: 30px;
+  }
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    border-radius: 8px;
+    transition: all .6s ease-in-out;
+    background-color: var(--clr-babypowder);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/* MEDIA QUERIES FOR NAV */
+@media screen and (max-width: 640px){
+    .hamburger {
+      display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    
+      .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 0;
+      gap: 0;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      transition: 0.7s;
+      padding: 5px;
+    }
+    
+    .nav-item {
+      margin: 20px 0;
+    }
+    
+    .nav-menu.active {
+      left: 0;
+    }
+  }
+  /* END OF MEDIA QUERIES FOR NAV */
 
 /* PRODUCTS AND SERVICES STYLES */
 
