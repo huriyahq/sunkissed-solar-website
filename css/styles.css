@@ -11,48 +11,56 @@
 
 /* PRODUCTS AND SERVICES STYLES */
 .productPicture1 {
-    width: 40%;
-    height: 40%;
+    width: 40em;
+    height: auto;
+    margin: 1em;
+    
 }
 
-.productPicture1 .img {
+.productPicture1 img {
     width: 100%;
     height: auto;
+    
 }
 
 .techSpecs1 {
-    width: 40%;
-    height: 40%;
+    width: 40em;
+    height: auto;
+    margin: 1em;
 }
 
 .productPicture2 {
-    width: 40%;
-    height: 40%;
+    width: 40em;
+    height: auto;
+    margin: 1em;
 }
 
-.productPicture2 .img {
+.productPicture2 img {
     width: 100%;
     height: auto;
 }
 
 .techSpecs2 {
-    width: 40%;
-    height: 40%;
+    width: 40em;
+    height: auto;
+    margin: 1em;
 }
 
 .installationPicture1 {
-    width: 40%;
-    height: 40%;
+    width: 40em;
+    height: auto;
+    margin: 1em;
 }
 
-.installationPicture1 .img {
+.installationPicture1 img {
     width: 100%;
     height: auto;
 }
 
 .techSpecs3 {
-    width: 40%;
-    height: 40%;
+    width: 40em;
+    height: auto;
+    margin: 1em;
 }
 
 /* CASE STUDIES STYLES */
