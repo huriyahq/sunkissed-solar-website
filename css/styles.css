@@ -117,14 +117,23 @@ hgroup h1 {
   justify-content: center;
 }
 
-form input {
+textarea,
+form input:not(.btn) {
   width: 100%;
+  border: 2px solid var(--clr-frenchblue);
+  border-radius: 3px;
+  padding: 0.5rem;
+  outline: none;
 }
 
 form input:last-of-type {
   margin-top: 8px;
 }
 
+form input:focus,
+textarea:focus {
+  border-color: var(--clr-yelloworange);
+}
 /* QUOTE CALCULATOR SPECIFIC STYLES */
 
 

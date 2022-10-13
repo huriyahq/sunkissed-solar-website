@@ -64,7 +64,10 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+form input,
+textarea,
+::placeholder {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -90,14 +93,6 @@ h3 {
 
 h4 {
     font-size: var(--fs-4);
-}
-
-h5 {
-    font-size: var(--fs-5);
-}
-
-h6 {
-    font-size: var(--fs-6);
 }
 
 p {
