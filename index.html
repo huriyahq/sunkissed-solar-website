@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +8,7 @@
     <!-- External stylesheet -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./quoteCalculator/quoteCalculator.css">
     <title>Sunkissed Solar</title>
 </head>
 <body>
@@ -19,6 +21,7 @@
         - about text on right
     -->
     <header>
+
 
 
     </header>
@@ -110,5 +113,23 @@ More often that not, solar panels are generating more energy that can be used ar
 
     <!-- External JS -->
     <script src="/js/script.js"></script>
-  </body>
+  
+
+    <div id="quoteCalculator">
+        <h2>Get a Rough Estimate</h2>
+        <p>Providing an exact cost estimate is difficult, everyone's circumstances are different. Use our calculator below to get a rough estimate of how much a solar set-up might cost.</p>
+        <form action="#" id="form">
+            <label for="spaceWidth">How wide is the area you'd like to cover?</label>
+            <input type="text" id="spaceWidth" placeholder="width in meters">
+            <label for="spaceHeight">How tall is the area you'd like to cover?</label>
+            <input type="text" id="spaceHeight" placeholder="height in meters">
+            <input type="submit" value="Calculate!" id="calculate">
+        </form>
+        <div>
+            <p id="output"></p>
+
+        </div>
+    </div>
+    <script src="./quoteCalculator/quoteCalculator.js"></script>
+</body>
 </html>
