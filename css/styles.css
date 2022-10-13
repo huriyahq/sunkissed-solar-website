@@ -1,0 +1,44 @@
+.productPicture1 {
+    width: 40%;
+    height: 40%;
+}
+
+.productPicture1 .img {
+    width: 100%;
+    height: auto;
+}
+
+.techSpecs1 {
+    width: 40%;
+    height: 40%;
+}
+
+.productPicture2 {
+    width: 40%;
+    height: 40%;
+}
+
+.productPicture2 .img {
+    width: 100%;
+    height: auto;
+}
+
+.techSpecs2 {
+    width: 40%;
+    height: 40%;
+}
+
+.installationPicture1 {
+    width: 40%;
+    height: 40%;
+}
+
+.installationPicture1 .img {
+    width: 100%;
+    height: auto;
+}
+
+.techSpecs3 {
+    width: 40%;
+    height: 40%;
+}
