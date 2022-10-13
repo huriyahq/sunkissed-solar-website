@@ -1,8 +1,5 @@
-main {
-  padding: var(--body-padding);
-}
-
 section {
+  padding: var(--body-padding);
   margin-top: var(--col-items-mt);
 }
 
@@ -92,13 +89,33 @@ hgroup h1 {
 
 
 /* PRODUCTS AND SERVICES STYLES */
+
+.products-services__item {
+  margin-top: var(--col-items-mt);
+  border-radius: 10px;
+  background-color: var(--clr-yelloworange);
+}
+
 .products-services__img {
   width: var(--item-img-width);
+  border-radius: 3px;
+  border: 3px solid var(--clr-babypowder);
 }
 
 /* CASE STUDIES STYLES */
+.case-studies__card {
+  background-color: var(--clr-eggshell);
+  border-radius: 10px;
+  width: fit-content;
+}
+
 .case-studies__img {
-  width: var(--lg-img-width);
+  width: var(--md-img-width);
+  border-radius: 20%;
+}
+
+.case-studies ul {
+  list-style: none;
 }
 
 /* FAQ STYLES */
@@ -117,6 +134,10 @@ hgroup h1 {
   justify-content: center;
 }
 
+form label {
+  font-size: var(--fs-p);
+}
+
 textarea,
 form input:not(.btn) {
   width: 100%;
@@ -124,25 +145,37 @@ form input:not(.btn) {
   border-radius: 3px;
   padding: 0.5rem;
   outline: none;
+  margin-bottom: 6px;
+  background-color: transparent;
 }
 
 form input:last-of-type {
   margin-top: 8px;
 }
 
+
+.quote-calculator {
+  background-color: var(--clr-frenchblue);
+  color: var(--clr-babypowder);
+}
+
+.calculator form input {
+  border: 2px solid var(--clr-babypowder);
+  color: var(--clr-babypowder);
+}
+
+.calculator form input::placeholder {
+  color: var(--clr-babypowder);
+}
+
 form input:focus,
 textarea:focus {
   border-color: var(--clr-yelloworange);
 }
-/* QUOTE CALCULATOR SPECIFIC STYLES */
 
-
-/* CONTACT FORM SPECIFIC STYLES */
-.contact form .btn {
-  margin: auto;
+.calculator .btn:active {
+  border-color: var(--clr-babypowder); 
 }
-
-
 /* SCREEN SIZES 800px AND BELOW */
 
 @media (max-width: 800px) {
@@ -208,5 +241,7 @@ textarea:focus {
   }
 
   /* FORMS */
-
+  .contact form .btn {
+    margin: auto;
+  }
  }
