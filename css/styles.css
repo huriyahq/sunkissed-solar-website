@@ -1,15 +1,188 @@
+
 /* -------- STYLES FOR SECTIONS -------- */
 
 /* HEADER HERO STYLES */
+.hero-header {
+    height: 60vh;
+    width: fit-content;
+    align-items: center;
+    padding: var(--body-padding);
+    gap: var(--row-items-gap);
+    background-color: var(--clr-babypowder);
+}
+
 .hero-img {
-    width: 300px;
+    width: var(--md-img-width);
+}
+
+hgroup h1 {
+    text-transform: uppercase;
 }
 
 /* NAVIGATION BAR STYLES */
+.navbar {
+    height: 3rem;
+    overflow: hidden;
+    background-color: var(--clr-frenchblue);
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fs-p);
+  }
 
+.nav-menu {
+    background-color: var(--clr-frenchblue);
+    list-style: none;
+    gap: 30px;
+  }
+
+  .nav-link {
+    color: var(--clr-babypowder);
+    text-decoration: none;
+  }
+
+  .nav-link:visited,
+  .nav-link:hover {
+    color: var(--clr-yelloworange);
+  }
+
+  .nav-link:active {
+    color: var(--clr-babypowder);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    border-radius: 8px;
+    transition: all .6s ease-in-out;
+    background-color: var(--clr-babypowder);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.sticky + .content {
+    padding-top: 50px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+   /* HEADER QUERIES*/
+   .hero-header {
+    flex-direction: column;
+    height: 70vh;
+    text-align: center;
+   }
+}
+@media (max-width: 640px){
+    /* NAV QUERIES */
+    .hamburger {
+      display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 0;
+      gap: 0;
+      flex-direction: column;
+      width: 100%;
+      height: 70vh;
+      text-align: center;
+      transition: 0.7s;
+    }
+    
+    .nav-item {
+        margin: 20px 0;
+      }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+  }
+  /* END OF MEDIA QUERIES */
+
+  
 
 /* PRODUCTS AND SERVICES STYLES */
+.productPicture1 {
+    width: 40em;
+    height: auto;
+    margin: 1em;
+    
+}
 
+.productPicture1 img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.techSpecs1 {
+    width: 40em;
+    height: auto;
+    margin: 1em;
+}
+
+.productPicture2 {
+    width: 40em;
+    height: auto;
+    margin: 1em;
+}
+
+.productPicture2 img {
+    width: 100%;
+    height: auto;
+}
+
+.techSpecs2 {
+    width: 40em;
+    height: auto;
+    margin: 1em;
+}
+
+.installationPicture1 {
+    width: 40em;
+    height: auto;
+    margin: 1em;
+}
+
+.installationPicture1 img {
+    width: 100%;
+    height: auto;
+}
+
+.techSpecs3 {
+    width: 40em;
+    height: auto;
+    margin: 1em;
+}
 
 /* CASE STUDIES STYLES */
 
@@ -21,6 +194,7 @@
 
 
 /* CONTACT FORM STYLES */
+
 #contact-form {
     background-color: rgba(248, 245, 245, 0.817);
     padding: 20px 20px;
@@ -37,3 +211,4 @@
     border-radius: 4px;
     cursor: pointer;
 }
+

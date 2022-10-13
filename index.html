@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- External stylesheet -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./quoteCalculator/quoteCalculator.css">
     <title>Sunkissed Solar</title>
 </head>
-<body>
-   
-    
+<body class="content">
     <!-- HERO AND NAV: TALIHA -->
-    <!-- HERO HEADER
-        - full width
-        - logo image on left
-        - about text on right
-    -->
-    <!-- THIS IS A HERO HEADER -->
+    <!--  HEADER -->
     <header class="flex-row hero-header">
         <!-- THIS IS COLUMN ONE -->
         <section class="flex-column">
@@ -30,26 +25,127 @@
         <hgroup class="flex-column hero-text">
             <h1>Sunkissed Solar</h1>
             <p>
-                Sunkissed Solar is... Bligendi consectetur repellat, cumque quos laborum exercitationem molestiae necessitatibus illum aliquid nam delectus maxime tempora eaque provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, amet in a eaque architecto laudantium ab. Tempora molestiae, et sequi quia iusto, cumque fuga, provident aspernatur in eaque ex temporibus?
+                Sunkissed Solar is ligendi consectetur repellat, cumque quos laborum exercitationem molestiae necessitatibus illum aliquid nam delectus maxime tempora eaque provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, amet in a eaque architecto laudantium ab.
             </p>
         </hgroup>
     </header>
-        <!-- NAVIGATION BAR
-        - full width on desktop
-        - displayed under header
-        - needs to be sticky
-    -->
-    <nav>
-        
-        
+    <nav class="navbar flex-row" id="navbar">
+      <ul class="nav-menu flex-row">
+        <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+              <a href="#" class="nav-link">Products & Services</a>
+        </li>
+        <li class="nav-item">
+              <a href="#" class="nav-link">Case Studies</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Quote Calculator</a>
+      </li>
+      <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+      </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
 
-    <!-- PRODUCTS AND SERVICES: ALEX -->
+    <!-- PRODUCTS AND SERVICES-->
 
+      <div class="flex-row">
+        <div class="productPicture1" id="productPicture1">
+          <img src="solarpanel1.jpg" alt="Solar Panels"/>
+        </div>
+        <div class="techSpecs2" id="techSpecs2">
+          <p>
+            Monocrystalline Solar Panels: Highly efficient in both power output and space. Built to last which means fewer repair and replacement costs. Costly.<br>
+            This type of solar panel is the purest one. You can easily recognise them from the uniform dark look. The silicon’s high purity causes this type of solar panel has one of the highest efficiency rates, with the newest ones reaching above 20%.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-row">
+      <div class="productPicture2" id="productPicture2">
+        <img src="solarpanel2.jpg" alt="Solar Panels"/>
+      </div>
+      <div class="techSpecs2" id="techSpecs2">
+        <p>
+          Polycrystalline Solar Panels: Less efficient, lower lifespan, and
+          sensitive to high temperatures. But much more cost efficient.<br />
+          You can quickly distinguish these panels because it has a blue,
+          speckled look. They are made by melting raw silicon, which is a faster
+          and cheaper process than that used for monocrystalline panels.
+        </p>
+      </div>
+      </div>
+
+      <div class="flex-row">
+      <div class="installationPicture1" id="installationPicture1">
+        <img src="solarpanel3.jpg" alt="Solar Panel Install" />
+      </div>
+      <div class="techSpecs3" id="techSpecs3">
+        <p>
+          Installation of your solar panels is included in the initial cost and
+          is performed by our MCS accredited solar panel installers. Our team of
+          experts will ensure your solar panels are installed to the highest
+          standard, following rigorous safety, health and environmental
+          standards.<br />
+          We also offer a 10-year limited product warranty at a reasonable cost.
+        </p>
+      </div>
+      </div>
+    </div>
+   
+ 
 
     <!-- CASE STUDIES: ZHUO -->
+<div id="csContainer">
+        <h1>Case Studies</h1>
+            <div class="case1">
+            <h3>
+                6 Solar Panels Successfully Installed
+            </h3>
+            <div class="img1">
+            <img src="Barns-with-Solar-Panels.jpg">
+            </div>
+            <div> 
+        
+            <ul>
+                <li>Where: On a stable block in West Sussex</li>
+                <li>When: September 2011</li>
+                <li>Time it took to fit: 2 days</li>
+                <li>panels: 16 x 245W</li>
+                <li>Estimated annual generation: 3,136kWh</li>
+            </ul>
+            </div>
+            <div>
+                <h4>Testimonial: Richard family</h4> 
+                <p>“People thinking about going solar, they need to think about how energy is going to increase in  the coming years and once I pay off this system, that’s it. I’ll just be paying the minimum on my electricity. Instead of paying our electricity bill, we’re paying for our solar system. "</p>
+            </div>
+            </div>
 
-
+            <div class="case2">
+                <h3>
+                West Sussex, 2.47kw Solar PV 
+                </h3>
+                <div class="img2"> 
+                    <img src="happyOldCouple.jpg">
+                <ul>
+                    <li>10 x Samsung LPC247 Modules</li>
+                    <li>6 panels facing east and 4 facing south</div<li>Return on Investment: 34.9%</li>
+                    <li>Annual Savings: £845</li>
+                </ul>
+                <div>
+                    <h4>Testimonial: DICKERSON FAMILY</h4>
+                    <p>“Sun Kissed Solar has dramatically changed our electricity bill. A year ago it was running up in the 350 range; our last bill was GBP50. It’s really nice to see that I’m making money.”</p>
+                    
     <!-- FAQ: SHAUN -->
     <div class="faq">
 
@@ -77,9 +173,7 @@ More often that not, solar panels are generating more energy that can be used ar
 
     </div>
 
-
     <!-- QUOTE CALCULATOR: NOAH -->
-
 
     <!-- CONTACT FORM: CHIA-->
     <div id="contact-form">
@@ -103,8 +197,25 @@ More often that not, solar panels are generating more energy that can be used ar
 
     </div>
 
-    
     <!-- External JS -->
     <script src="/js/script.js"></script>
+  
+
+    <div id="quoteCalculator">
+        <h2>Get a Rough Estimate</h2>
+        <p>Providing an exact cost estimate is difficult, everyone's circumstances are different. Use our calculator below to get a rough estimate of how much a solar set-up might cost.</p>
+        <form action="#" id="form">
+            <label for="spaceWidth">How wide is the area you'd like to cover?</label>
+            <input type="text" id="spaceWidth" placeholder="width in meters">
+            <label for="spaceHeight">How tall is the area you'd like to cover?</label>
+            <input type="text" id="spaceHeight" placeholder="height in meters">
+            <input type="submit" value="Calculate!" id="calculate">
+        </form>
+        <div>
+            <p id="output"></p>
+
+        </div>
+    </div>
+    <script src="./quoteCalculator/quoteCalculator.js"></script>
 </body>
 </html>
