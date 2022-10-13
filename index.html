@@ -8,13 +8,12 @@
     <!-- External stylesheet -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="./quoteCalculator/quoteCalculator.css">
     <title>Sunkissed Solar</title>
 </head>
 <body class="content">
     <!-- HERO AND NAV: TALIHA -->
     <!--  HEADER -->
-    <header class="flex-row hero-header">
+    <header class="flex hero-header">
         <!-- THIS IS COLUMN ONE -->
         <section class="flex-column">
             <article>
@@ -29,8 +28,8 @@
             </p>
         </hgroup>
     </header>
-    <nav class="navbar flex-row" id="navbar">
-      <ul class="nav-menu flex-row">
+    <nav class="navbar flex" id="navbar">
+      <ul class="nav-menu flex">
         <li class="nav-item">
               <a href="#" class="nav-link">About</a>
         </li>
@@ -59,11 +58,12 @@
     <main>
       <!-- PRODUCTS AND SERVICES: ALEX-->
       <section class="products-services">
-        <article class="flex-row">
+        <h2>Products & Services</h2>
+        <article class="flex">
         <!-- THIS IS COLUMN ONE -->
           <section class="flex-column">
           <figure>
-            <img class="hero-img" src="/imgs/solarpanel1.jpg" alt="Solar Panel">
+            <img class="products-services__img" src="/imgs/solarpanel1.jpg" alt="Solar Panel">
           </figure>
           </section>
           <!-- THIS IS COLUMN TWO -->
@@ -74,11 +74,11 @@
           </p>
           </section>
         </article>
-        <article class="flex-row">
+        <article class="flex">
             <!-- THIS IS COLUMN ONE -->
           <section class="flex-column">
             <figure>
-              <img class="hero-img" src="/imgs/solarpanel2.jpg" alt="Solar Panel">
+              <img class="products-services__img" src="/imgs/solarpanel2.jpg" alt="Solar Panel">
             </figure>
           </section>
             <!-- THIS IS COLUMN TWO -->
@@ -92,11 +92,11 @@
           </p>
           </section>
         </article>
-        <article class="flex-row">
+        <article class="flex">
             <!-- THIS IS COLUMN ONE -->
           <section class="flex-column">
             <figure>
-              <img class="hero-img" src="/imgs/solarpanel3.jpg" alt="Solar Panel">
+              <img class="products-services__img" src="/imgs/solarpanel3.jpg" alt="Solar Panel">
             </figure>
           </section>
             <!-- THIS IS COLUMN TWO -->
@@ -114,7 +114,8 @@
       </section>
 
     <!-- CASE STUDIES: ZHUO -->
-    <section class="products-services">
+    <section class="case-studies">
+      <h2>Case Studies</h2>
       <article class="flex-row">
       <!-- THIS IS COLUMN ONE -->
       <section class="flex-column">
@@ -134,7 +135,7 @@
         <!-- THIS IS COLUMN TWO -->
         <section class="flex-column">
           <figure>
-            <img class="hero-img" src="/imgs/Barns-with-Solar-Panels.jpg" alt="Barns with solar panels">
+            <img class="case-studies__img" src="/imgs/barns.jpg" alt="Barns with solar panels">
           </figure>
           </section>
       </article>
@@ -155,18 +156,16 @@
           <!-- THIS IS COLUMN TWO -->
           <section class="flex-column">
             <figure>
-              <img class="hero-img" src="/imgs/happyOldCouple.jpg" alt="Happy couple">
+              <img class="case-studies__img" src="/imgs/happycouple.jpg" alt="Happy couple">
             </figure>
           </section>
         </article>
     </section>
-</main>
-
-          
+    
     <!-- FAQ: SHAUN -->
-
-    <article class="flex-row faq">
+    <section class="faq">
       <h2>Frequently Asked Questions</h2>
+    <article class="flex-row">
       <section>
         <h3>What is solar electricity?</h3>
         <p>
@@ -192,29 +191,33 @@
         </p>
       </section>
     </article>
-    <!-- QUOTE CALCULATOR: NOAH -->
-<article class="flex-row quote-calculator">
-  <section id="quotecalculator" class="flex-column calculator">
-    <h2>Get a Rough Estimate</h2>
-    <p>Providing an exact cost estimate is difficult, everyone's circumstances are different. Use our calculator below to get a rough estimate of how much a solar set-up might cost.</p>
-    <form action="#" id="form">
-      <label for="spaceWidth">How wide is the area you'd like to cover?</label>
-      <input type="text" id="spaceWidth" placeholder="width in meters">
-      <label for="spaceHeight">How tall is the area you'd like to cover?</label>
-      <input type="text" id="spaceHeight" placeholder="height in meters">
-      <input type="submit" value="Calculate!" id="calculate">
-      <section>
-        <p id="output">
-          <!-- Calculator output here -->
-        </p>
-    </form>
   </section>
-</article>
 
-    <!-- CONTACT FORM: CHIA-->
-    <article class="flex-row contact">
+    <!-- QUOTE CALCULATOR: NOAH -->
+  <section class="quote-calculator">
+      <h2>Quote Calculator</h2>
+      <article class="flex-row">
+        <section id="quotecalculator" class="flex-column calculator">
+          <p>Providing an exact cost estimate is difficult, everyone's circumstances are different. Use our calculator below to get a rough estimate of how much a solar set-up might cost.</p>
+          <form action="#" id="form">
+            <label for="spaceWidth">How wide is the area you'd like to cover?</label>
+            <input type="text" id="spaceWidth" placeholder="width in meters">
+            <label for="spaceHeight">How tall is the area you'd like to cover?</label>
+            <input type="text" id="spaceHeight" placeholder="height in meters">
+            <input type="submit" value="Calculate" id="calculate" class="btn">
+              <p id="output">
+                <!-- Calculator output here -->
+              </p>
+          </form>
+        </section>
+      </article>
+  </section>
+
+  <!-- CONTACT FORM: CHIA-->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <article class="flex-row">
       <section id="contact-form" class="flex-column">
-        <h2>Contact form</h2>
         <form action="" class="flex-column">
           <label for="firstname">First Name</label>
           <input type="text" name="firstname" id="firstname">
@@ -228,12 +231,14 @@
           <label for="message">Message</label>
           <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here"></textarea>
 
-          <br>
-          <button>Submit</button>
+          <br/>
+          <button class="btn">Submit</button>
           </form>
       </section>
     </article>
+  </section>
+  </main>
     <!-- External JS -->  
-    <script src="/js/script.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,14 @@
+main {
+  padding: var(--body-padding);
+}
+
+section {
+  margin-top: var(--col-items-mt);
+}
+
+.flex {
+  gap: var(--row-items-gap);
+}
 
 /* -------- STYLES FOR SECTIONS -------- */
 
@@ -78,154 +89,115 @@ hgroup h1 {
     padding-top: 50px;
 }
 
-/* MEDIA QUERIES */
-@media (max-width: 800px) {
-   /* HEADER QUERIES*/
-   .hero-header {
-    flex-direction: column;
-    height: 70vh;
-    text-align: center;
-   }
-}
-@media (max-width: 640px){
-    /* NAV QUERIES */
-    .hamburger {
-      display: block;
-    }
-    
-    .hamburger.active .bar:nth-child(2) {
-      transform: translateX(-50px);
-      opacity: 0;
-    }
-    
-    .hamburger.active .bar:nth-child(1){
-      transform: translateY(8px) rotate(45deg);
-    }
-    
-    .hamburger.active .bar:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
-    }
-    
-    .nav-menu {
-      position: fixed;
-      left: -100%;
-      top: 0;
-      gap: 0;
-      flex-direction: column;
-      width: 100%;
-      height: 70vh;
-      text-align: center;
-      transition: 0.7s;
-    }
-    
-    .nav-item {
-        margin: 20px 0;
-      }
-    
-    .nav-menu.active {
-        left: 0;
-    }
-  }
-  /* END OF MEDIA QUERIES */
 
-  
 
 /* PRODUCTS AND SERVICES STYLES */
-
-
-
-/* Setting up the responsive Grid container - auto-fit + minmax() */
-/* .products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2em;
-  margin: 2em;
-} */
-
-.products {
-  gap: 2em;
+.products-services__img {
+  width: var(--item-img-width);
 }
-
-/* Grid inside grid - album cards also use grid for layout setup */
-.product__item {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 1.5em;
-  align-items: stretch;
-  justify-content: center;
-  width: fit-content;
-  border: 2px solid red;
-}
-
-.product__desc {
-  box-sizing: border-box;
-  word-wrap: break-word;
-  max-width: 600px;
-}
-
-/* Important step - image will spill over the container if width is not declared explicitly */
-.product__img {
-  width: 100%;
-}
-
 
 /* CASE STUDIES STYLES */
-
+.case-studies__img {
+  width: var(--lg-img-width);
+}
 
 /* FAQ STYLES */
 
-.faq {
+.faq article {
   flex-wrap: wrap;
 }
 
 
-/* QUOTE CALCULATOR STYLES */
+/* FORM STYLES */
 
-.quote-calculator {
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.calculator {
-  width: 80%;
-}
-
-.calculator form input {
-  width: 100%;
-}
-
-.calculator form input:last-of-type {
-  padding: 10px;
-  margin-top: 8px;
-}
-
-/* CONTACT FORM STYLES */
-
-
-.contact {
+.quote-calculator article,
+.contact article {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-#contact-form {
-  width: 80%;
-}
-
-#contact-form form input {
+form input {
   width: 100%;
 }
 
-#contact-form form input:last-of-type {
-  padding: 10px;
+form input:last-of-type {
   margin-top: 8px;
 }
 
+/* QUOTE CALCULATOR SPECIFIC STYLES */
 
-/* SCREEN SIZES 700px AND ABOVE */
-@media (min-width: 700px) {
-  .products-services {
-    flex-wrap: nowrap;
+
+/* CONTACT FORM SPECIFIC STYLES */
+.contact form .btn {
+  margin: auto;
+}
+
+
+/* SCREEN SIZES 800px AND BELOW */
+
+@media (max-width: 800px) {
+  /* BODY / OVERALL QUERIES */
+  body {
+    text-align: center;
+  }
+
+  /* HEADER QUERIES*/
+  .hero-header {
+   flex-direction: column;
+   height: 70vh;
+   text-align: center;
   }
 }
+@media (max-width: 640px){
+   /* NAV QUERIES */
+   .hamburger {
+     display: block;
+   }
+   
+   .hamburger.active .bar:nth-child(2) {
+     transform: translateX(-50px);
+     opacity: 0;
+   }
+   
+   .hamburger.active .bar:nth-child(1){
+     transform: translateY(8px) rotate(45deg);
+   }
+   
+   .hamburger.active .bar:nth-child(3){
+     transform: translateY(-8px) rotate(-45deg);
+   }
+   
+   .nav-menu {
+     position: fixed;
+     left: -100%;
+     top: 0;
+     gap: 0;
+     flex-direction: column;
+     width: 100%;
+     height: 70vh;
+     text-align: center;
+     transition: 0.7s;
+   }
+   
+   .nav-item {
+       margin: 20px 0;
+     }
+   
+   .nav-menu.active {
+       left: 0;
+   }
+
+   /* MAIN SECTION QUERIES */
+   article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  /* FORMS */
+
+ }

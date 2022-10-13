@@ -3,14 +3,12 @@
 
 :root {
     /* font sizes */
-    --fs-1: clamp(2.6rem, 4.6vw + 1rem, 8rem);
-    --fs-2: clamp(2.2rem, 3.2vw + 1rem, 4.8rem);
-    --fs-3: clamp(1.8rem, 2.4vw + 1rem, 4.2rem);
-    --fs-4: clamp(1.4rem, 1.6vw + 1rem, 3.6rem);
-    --fs-5: clamp(1.2rem, 1vw + 1rem, 3rem);
-    --fs-6: clamp(1rem, 1vw + 1rem, 2.4rem);
-    --fs-p: clamp(0.8rem, 1vw + 0.4rem, 2rem);
-    --fs-xs: clamp(0.8rem, 1vw + 0.4rem, 1.8rem);
+    --fs-1: clamp(2.6rem, 4.6vw + 1rem, 7rem);
+    --fs-2: clamp(1.4rem, 2.4vw + 1rem, 3rem);
+    --fs-3: clamp(1.3rem, 2vw + 1rem, 2rem);
+    --fs-4: clamp(1.1rem, 1.4vw + 1rem, 1.8rem);
+    --fs-p: clamp(0.8rem, 1vw + 0.4rem, 1.8rem);
+    --fs-xs: clamp(0.8rem, 1vw + 0.4rem, 1.6rem);
 
 
     /* colours */
@@ -23,7 +21,7 @@
     --clr-black: rgb(0, 0, 0);
 
     /* spacing */
-    --body-padding: clamp(0.875rem, 2vw, 2rem) clamp(0.625rem, 2vw, 2.25rem);
+    --body-padding: clamp(0.9rem, 2vw, 2rem) clamp(1rem, 2vw, 3rem);
     --row-items-gap: clamp(0.625rem, 2vw, 1.25rem);
     --col-items-mt: clamp(0.625rem, 2vw, 1.25rem);
     --items-paddings: clamp(0.875rem, 2vw, 2rem) clamp(0.625rem, 2vw, 2.25rem);
@@ -34,6 +32,7 @@
     --lg-img-width: clamp(200px, 40vw, 400px);
     --md-img-width: clamp(100px, 30vw, 300px);
     --sm-img-width: clamp(50px, 25vw, 200px);
+    --item-img-width: clamp(100px, 30vw, 280px);
 }
 
 /* GLOBAL STYLES */
@@ -52,9 +51,8 @@ body {
 }
 
 /* UTILITY CLASSES */
-.flex-row {
+.flex {
     display: flex;
-    flex-direction: row;
 }
 
 .flex-column {
@@ -73,7 +71,7 @@ h4 {
 h1,
 h2,
 h3 {
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 h1 {
