@@ -131,84 +131,101 @@ hgroup h1 {
   
 
 /* PRODUCTS AND SERVICES STYLES */
-.productPicture1 {
-    width: 40em;
-    height: auto;
-    margin: 1em;
-    
+
+
+
+/* Setting up the responsive Grid container - auto-fit + minmax() */
+/* .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2em;
+  margin: 2em;
+} */
+
+.products {
+  gap: 2em;
 }
 
-.productPicture1 img {
-    width: 100%;
-    height: auto;
-    
+/* Grid inside grid - album cards also use grid for layout setup */
+.product__item {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1.5em;
+  align-items: stretch;
+  justify-content: center;
+  width: fit-content;
+  border: 2px solid red;
 }
 
-.techSpecs1 {
-    width: 40em;
-    height: auto;
-    margin: 1em;
+.product__desc {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  max-width: 600px;
 }
 
-.productPicture2 {
-    width: 40em;
-    height: auto;
-    margin: 1em;
+/* Important step - image will spill over the container if width is not declared explicitly */
+.product__img {
+  width: 100%;
 }
 
-.productPicture2 img {
-    width: 100%;
-    height: auto;
-}
-
-.techSpecs2 {
-    width: 40em;
-    height: auto;
-    margin: 1em;
-}
-
-.installationPicture1 {
-    width: 40em;
-    height: auto;
-    margin: 1em;
-}
-
-.installationPicture1 img {
-    width: 100%;
-    height: auto;
-}
-
-.techSpecs3 {
-    width: 40em;
-    height: auto;
-    margin: 1em;
-}
 
 /* CASE STUDIES STYLES */
 
 
 /* FAQ STYLES */
 
+.faq {
+  flex-wrap: wrap;
+}
+
 
 /* QUOTE CALCULATOR STYLES */
 
+.quote-calculator {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: 80%;
+}
+
+.calculator form input {
+  width: 100%;
+}
+
+.calculator form input:last-of-type {
+  padding: 10px;
+  margin-top: 8px;
+}
 
 /* CONTACT FORM STYLES */
 
+
+.contact {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 #contact-form {
-    background-color: rgba(248, 245, 245, 0.817);
-    padding: 20px 20px;
+  width: 80%;
+}
+
+#contact-form form input {
+  width: 100%;
+}
+
+#contact-form form input:last-of-type {
+  padding: 10px;
+  margin-top: 8px;
 }
 
 
-#contact-form button {
-    width: 50%;
-    align-self: center;
-    background-color: gray;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+/* SCREEN SIZES 700px AND ABOVE */
+@media (min-width: 700px) {
+  .products-services {
+    flex-wrap: nowrap;
+  }
 }
-

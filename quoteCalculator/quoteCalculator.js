@@ -1,3 +1,5 @@
+
+// QUOTE CALCULATOR
 const form = document.getElementById("form");
 const spaceWidth = document.getElementById("spaceWidth");
 const spaceHeight = document.getElementById("spaceHeight");
