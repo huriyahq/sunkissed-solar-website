@@ -14,16 +14,20 @@
     <div id="quoteCalculator">
         <h2>Get a Rough Estimate</h2>
         <p>Providing an exact cost estimate is difficult, everyone's circumstances are different. Use our calculator below to get a rough estimate of how much a solar set-up might cost.</p>
-        <form action="#">
+        <form action="#" id="form">
             <label for="spaceWidth">How wide is the area you'd like to cover?</label>
-            <input type="text" id="spaceWidth">
+            <input type="text" id="spaceWidth" placeholder="width in meters">
             <label for="spaceHeight">How tall is the area you'd like to cover?</label>
-            <input type="text" id="spaceHeight">
-            <input type="submit" value="Calculate!">
+            <input type="text" id="spaceHeight" placeholder="height in meters">
+            <input type="submit" value="Calculate!" id="calculate">
         </form>
+        <div>
+            <p id="output"></p>
 
+        </div>
     </div>
     <!-- Add external JS -->
     <!-- <script src=""></script> -->
+    <script src="./quoteCalculator/quoteCalculator.js"></script>
 </body>
 </html>
