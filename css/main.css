@@ -1,4 +1,6 @@
 /* -------- ROOT / BASE STYLES FOR SITE -------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root {
     /* font sizes */
     --fs-1: clamp(2.6rem, 4.6vw + 1rem, 8rem);
@@ -43,7 +45,8 @@
 
 body {
     width: fit-content;
-    line-height: 1.4;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* UTILITY CLASSES */
@@ -60,16 +63,25 @@ body {
 /* TYPOGRAPHY */
 h1,
 h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
 h3 {
     line-height: 1.6;
 }
 
 h1 {
     font-size: var(--fs-1);
+    font-weight: 700;
 }
 
 h2 {
     font-size: var(--fs-2);
+    font-weight: 600;
 }
 
 h3 {
@@ -112,7 +124,6 @@ p {
 }
 
 /* LISTS */
-
 ul {
     padding: var(--body-padding);
     font-size: var(--fs-p);
