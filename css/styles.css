@@ -87,7 +87,6 @@ hgroup h1 {
 }
 
 
-
 /* PRODUCTS AND SERVICES STYLES */
 
 .products-services__item {
@@ -103,14 +102,25 @@ hgroup h1 {
 }
 
 /* CASE STUDIES STYLES */
+.case-studies {
+  flex-direction: row;
+}
 .case-studies__card {
   background-color: var(--clr-eggshell);
   border-radius: 10px;
-  width: fit-content;
+}
+
+
+.case-studies__1 {
+  text-align: left;
+}
+
+.case-studies__2 {
+  text-align: right;
 }
 
 .case-studies__img {
-  width: var(--md-img-width);
+  width: var(--item-img-width);
   border-radius: 20%;
 }
 
@@ -159,8 +169,15 @@ form input:last-of-type {
   color: var(--clr-babypowder);
 }
 
+.quote-calculator p {
+  background-color: var(--clr-frenchblue);
+  color: var(--clr-babypowder);
+  margin: 8px 0;
+}
+
+
 .calculator form input {
-  border: 2px solid var(--clr-babypowder);
+  border: 2px solid var(--clr-yelloworange);;
   color: var(--clr-babypowder);
 }
 
@@ -238,6 +255,16 @@ textarea:focus {
 
   ul {
     list-style: none;
+  }
+
+  /* CASE STUDIES */
+  .case-studies__card {
+    width: fit-content;
+  }
+
+  .case-studies__1,
+  .case-studies__2 {
+    text-align: center;
   }
 
   /* FORMS */

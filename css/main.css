@@ -4,11 +4,11 @@
 :root {
     /* font sizes */
     --fs-1: clamp(2.6rem, 4.6vw + 1rem, 7rem);
-    --fs-2: clamp(1.4rem, 2.4vw + 1rem, 3rem);
-    --fs-3: clamp(1.2rem, 1.6vw + 1rem, 1.9rem);
-    --fs-4: clamp(1.1rem, 1.4vw + 1rem, 1.8rem);
-    --fs-p: clamp(0.8rem, 1vw + 0.4rem, 1.8rem);
-    --fs-xs: clamp(0.8rem, 1vw + 0.4rem, 1.6rem);
+    --fs-2: clamp(1.2rem, 2vw + 1rem, 2rem);
+    --fs-3: clamp(1.1rem, 1.2vw + 1rem, 1.7rem);
+    --fs-4: clamp(1rem, 1.3vw + 1rem, 1.6rem);
+    --fs-p: clamp(0.8rem, 1vw + 0.4rem, 1.3rem);
+    --fs-xs: clamp(0.8rem, 1vw + 0.4rem, 1.1rem);
 
 
     /* colours */
