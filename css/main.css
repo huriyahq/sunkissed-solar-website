@@ -1,0 +1,121 @@
+/* -------- ROOT / BASE STYLES FOR SITE -------- */
+:root {
+    /* font sizes */
+    --fs-1: clamp(2.6rem, 4.6vw + 1rem, 8rem);
+    --fs-2: clamp(2.2rem, 3.2vw + 1rem, 4.8rem);
+    --fs-3: clamp(1.8rem, 2.4vw + 1rem, 4.2rem);
+    --fs-4: clamp(1.4rem, 1.6vw + 1rem, 3.6rem);
+    --fs-5: clamp(1.2rem, 1vw + 1rem, 3rem);
+    --fs-6: clamp(1rem, 1vw + 1rem, 2.4rem);
+    --fs-p: clamp(0.8rem, 1vw + 0.4rem, 2rem);
+    --fs-xs: clamp(0.8rem, 1vw + 0.4rem, 1.8rem);
+
+
+    /* colours */
+    --clr-white: rgb(255, 255, 255);
+    --clr-babypowder: rgb(254, 252, 246);
+    --clr-eggshell: rgb(232, 232, 216);
+    --clr-yelloworange: rgb(247, 147, 30);
+    --cl-chestnut: rgb(162, 81, 64);
+    --clr-frenchblue: rgb(26, 117, 188);
+    --clr-black: rgb(0, 0, 0);
+
+    /* spacing */
+    --body-padding: clamp(0.875rem, 2vw, 2rem) clamp(0.625rem, 2vw, 2.25rem);
+    --row-items-gap: clamp(0.625rem, 2vw, 1.25rem);
+    --col-items-mt: clamp(0.625rem, 2vw, 1.25rem);
+    --items-paddings: clamp(0.875rem, 2vw, 2rem) clamp(0.625rem, 2vw, 2.25rem);
+    --btn-padding-main: 0.6em 0.8em;
+    --btn-width-main: clamp(7rem, 10vw, 10rem);
+
+    /* sizing */
+    --lg-img-width: clamp(200px, 40vw, 400px);
+    --sm-img-width: clamp(50px, 25vw, 200px);
+}
+
+/* GLOBAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: fit-content;
+    line-height: 1.4;
+}
+
+/* UTILITY CLASSES */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3 {
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: var(--fs-1);
+}
+
+h2 {
+    font-size: var(--fs-2);
+}
+
+h3 {
+    font-size: var(--fs-3);
+}
+
+h4 {
+    font-size: var(--fs-4);
+}
+
+h5 {
+    font-size: var(--fs-5);
+}
+
+h6 {
+    font-size: var(--fs-6);
+}
+
+p {
+    font-size: var(--fs-p);
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    width: var(--btn-width-main);
+    padding: var(--btn-padding-main);
+    /* margin: 1.5rem 0; */
+    font-size: var(--fs-xs);
+    text-transform: uppercase;
+}
+
+.btn::before,
+.btn::after {
+    content: "";
+    display: inline-block;
+    width: 2em;
+    flex-basis: 2em;
+}
+
+/* LISTS */
+
+ul {
+    padding: var(--body-padding);
+    font-size: var(--fs-p);
+}
+
+
