@@ -1,7 +1,9 @@
 /* -------- STYLES FOR SECTIONS -------- */
 
 /* HEADER HERO STYLES */
-
+.hero-img {
+    width: 300px;
+}
 
 /* NAVIGATION BAR STYLES */
 
