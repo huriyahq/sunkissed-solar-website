@@ -3,12 +3,15 @@
 /* HEADER HERO STYLES */
 .hero-header {
     height: 60vh;
+    width: fit-content;
+    align-items: center;
     padding: var(--body-padding);
     gap: var(--row-items-gap);
+    background-color: var(--clr-babypowder);
 }
 
 .hero-img {
-    width: 300px;
+    width: var(--md-img-width);
 }
 
 hgroup h1 {
@@ -31,6 +34,21 @@ hgroup h1 {
     gap: 30px;
   }
 
+  .nav-link {
+    color: var(--clr-babypowder);
+    text-decoration: none;
+  }
+
+  .nav-link:visited,
+  .nav-link:hover {
+    color: var(--clr-yelloworange);
+  }
+
+  .nav-link:active {
+    color: var(--clr-babypowder);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
 
 .hamburger {
     display: none;
@@ -59,8 +77,17 @@ hgroup h1 {
     padding-top: 50px;
 }
 
-/* MEDIA QUERIES FOR NAV */
-@media screen and (max-width: 640px){
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+   /* HEADER QUERIES*/
+   .hero-header {
+    flex-direction: column;
+    height: 70vh;
+    text-align: center;
+   }
+}
+@media (max-width: 640px){
+    /* NAV QUERIES */
     .hamburger {
       display: block;
     }
@@ -85,7 +112,7 @@ hgroup h1 {
       gap: 0;
       flex-direction: column;
       width: 100%;
-      height: 60vh;
+      height: 70vh;
       text-align: center;
       transition: 0.7s;
     }
@@ -98,7 +125,9 @@ hgroup h1 {
         left: 0;
     }
   }
-  /* END OF MEDIA QUERIES FOR NAV */
+  /* END OF MEDIA QUERIES */
+
+  
 
 /* PRODUCTS AND SERVICES STYLES */
 

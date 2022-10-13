@@ -32,6 +32,7 @@
 
     /* sizing */
     --lg-img-width: clamp(200px, 40vw, 400px);
+    --md-img-width: clamp(100px, 30vw, 300px);
     --sm-img-width: clamp(50px, 25vw, 200px);
 }
 
