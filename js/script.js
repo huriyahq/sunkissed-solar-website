@@ -16,13 +16,13 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }));
 
 
-// MAKE NAVIGATION STICKY
-const navBar = document.getElementById("navbar");
+// // MAKE NAVIGATION STICKY
+// const navBar = document.getElementById("navbar");
 
-// EVENT LISTENER FOR SCROLL
-window.addEventListener("scroll", () => {
-    navBar.classList.toggle("sticky", window.scrollY > navBar.offsetTop);
-});
+// // EVENT LISTENER FOR SCROLL
+// window.addEventListener("scroll", () => {
+//     navBar.classList.toggle("sticky", window.scrollY > navBar.offsetTop);
+// });
 
 
 // QUOTE CALCULATOR
