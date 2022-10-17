@@ -21,7 +21,8 @@ const navBar = document.getElementById("navbar");
 
 // EVENT LISTENER FOR SCROLL
 window.addEventListener("scroll", () => {
-    navBar.classList.toggle("sticky", window.scrollY > 0);
+    navBar.classList.toggle("sticky", window.scrollY > navBar.offsetTop);
+    console.log(navBar.offsetTop);
 });
 
 
