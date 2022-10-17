@@ -3,11 +3,13 @@
 // VARIABLES FOR HAMBURGER MENU
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const navBar = document.getElementById("navbar");
 
 // EVENT LISTENER TO HAMBURGER BUTTON
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
+  navBar.classList.toggle("active");
 });
 
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {

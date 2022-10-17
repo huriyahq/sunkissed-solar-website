@@ -250,6 +250,10 @@ textarea:focus {
        left: 0;
    }
 
+   .navbar.active {
+      top: 70vh;
+   }
+
    /* MAIN SECTION QUERIES */
    article {
     flex-direction: column;
