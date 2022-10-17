@@ -85,7 +85,7 @@ h1 {
 h2 {
     font-size: var(--fs-2);
     font-weight: 600;
-    margin-top: 2.2rem;
+    margin: 2.2rem;
 }
 
 h3 {
